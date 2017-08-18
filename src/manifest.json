@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Fallen London CP Indicators",
+  "description": "This extension for Fallen London estimates the number of CP in sidebar progress qualities.",
+  "version": "$VERSION",
+  "content_scripts": [
+    {
+      "matches": ["http://fallenlondon.storynexus.com/*"],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
